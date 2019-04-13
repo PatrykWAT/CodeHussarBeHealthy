@@ -8,8 +8,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 public class ProjectAppControler {
-    @PostMapping("/test")
-    public String test(){
-        return "test Filtru";
+    @PostMapping("/savePulse")
+    public void savePulse(BioMedicalValue bioMedicalValue){
+    }
+
+    @PostMapping("/saveGSR")
+    public void saveGSR(){
+
+    }
+
+    @PostMapping("/saveActivity")
+    public void saveActivity(){
+
+    }
+
+    @PostMapping("/savePollResult")
+    public void savePollResult(){
+
     }
 }
