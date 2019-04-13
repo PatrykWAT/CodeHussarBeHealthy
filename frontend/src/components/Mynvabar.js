@@ -27,6 +27,10 @@ width: auto;
 
 const MyLink = styled(Link)`
 
+color:#ff00c7 !important;
+
+font-size: 1.2em;
+
 :hover{
     cursor:pointer;
 }
@@ -52,7 +56,7 @@ class MyNavbar extends React.Component {
             <div>
                 <Navbar color="light" className="bg-white" light expand="md">
                     <NavbarBrand href="/">
-                        <Logo alt="logo" className="logo" src="/assets/logo.png"></Logo>
+                        <Logo alt="logo" src="/assets/logo.png"></Logo>
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
@@ -74,7 +78,7 @@ class MyNavbar extends React.Component {
 
 
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
+                                <DropdownToggle style={{ color: "#ff00c7", fontSize: "1.2em " }} nav caret>
                                     Stats
                                 </DropdownToggle>
                                 <DropdownMenu right>
