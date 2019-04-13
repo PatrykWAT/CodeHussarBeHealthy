@@ -5,7 +5,7 @@ import java.util.Date;
 
 
 public class BioMedicalValue implements Serializable {
-    private Date date;git addd
+    private Date date;
     private int value;
 
     public Date getDate() {
