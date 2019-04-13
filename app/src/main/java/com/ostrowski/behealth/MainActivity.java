@@ -18,8 +18,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    public void samopoczucie(View view) {
-        Intent intent = new Intent( this, ankieta.class );
-        startActivity( intent );
-    }
 }

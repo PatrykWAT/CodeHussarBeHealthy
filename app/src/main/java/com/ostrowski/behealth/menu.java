@@ -54,6 +54,16 @@ public class menu extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    public void samopoczucie(View view) {
+        Intent intent = new Intent( this, ankieta.class );
+        startActivity( intent );
+    }
+
+    public void testBecka(View view) {
+        Intent intent = new Intent( this, Pop.class );
+        startActivity( intent );
+    }
 }
 
 
