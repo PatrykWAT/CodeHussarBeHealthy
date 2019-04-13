@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 import MyNavbar from './components/Mynvabar'
+import CurentPrj from './components/CurentPrj'
 import LiveData from './components/LiveData'
 import Loging from './components/Loging'
 import Charts from './components/Charts'
+import Status from './components/Status'
 
 
-import { Container,Row } from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 
 // #033a79 granat
 // #FF00c7 różowy
@@ -27,17 +29,19 @@ class App extends Component {
   render() {
     return (
       <Background >
-          {!!(this.state.login) ? <Loging togle={this.toggleLoging} /> : <>
+        {!!(this.state.login) ? <Loging togle={this.toggleLoging} /> : <>
           <MyNavbar />
-        <Container>
-          <Row style={{fontSize: "1.8em"}}> &nbsp;</Row>
-          <LiveData />
-          <Charts/>
-        </Container>
-           </>
+          <Container>
+          <CurentPrj/>
+            <Row style={{ fontSize: "1.8em" }}> &nbsp;</Row>
+            <LiveData />
+            <Charts />
+            <Status/>
+          </Container>
+        </>
         }
       </Background >
-      );
+    );
   }
 }
 

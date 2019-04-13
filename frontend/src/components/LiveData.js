@@ -56,9 +56,9 @@ min-width: 100%;
 const Border = styled.div
     `
 background-color: white;
-border-radius: 20px;
 padding: 10px;
 margin: 10px auto 10px auto;
+border-radius: 20px;
 box-shadow: 0 0 5px 5px rgb(165, 163, 167);
 text-align: center;
 height:200px;
