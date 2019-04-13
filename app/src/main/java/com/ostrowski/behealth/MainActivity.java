@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void zaloguj(View view) {
-        Intent intent = new Intent(this, menu.class);
-        startActivity(intent);
+        Intent myIntent = new Intent(this, menu.class);
+        startActivity(myIntent);
     }
 }
