@@ -11,7 +11,7 @@ const data = [
         subject: 'Kroki', A: 98, B: 130, fullMark: 150,
     },
     {
-        subject: 'Garwoliczność', A: 86, B: 130, fullMark: 150,
+        subject: 'GSR', A: 86, B: 130, fullMark: 150,
     },
     {
         subject: 'Humor', A: 99, B: 100, fullMark: 150,

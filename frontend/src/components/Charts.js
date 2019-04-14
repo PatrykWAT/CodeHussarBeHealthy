@@ -9,7 +9,6 @@ class Charts extends React.Component {
     render() {
         return (
             <Streach className="stats">
-
                 <BigChart />
             </Streach>
         )
@@ -20,5 +19,7 @@ export default Charts
 
 
 const Streach = styled.div`
+// background-color: #FFF;
+padding:-20px;
 
 `

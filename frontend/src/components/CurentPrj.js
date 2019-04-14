@@ -8,6 +8,7 @@ import { Row } from 'reactstrap'
 const Shadow = styled.div`
 cursor: pointer;
 box-shadow: 0px 5px 20px #d7d8d8;
+margin-top: 50px;
 `
 
 const Curretn = styled.img`
@@ -20,7 +21,7 @@ const GetHelp = () =>
             <Element name="gethelp" className="gethelp">
             </Element>
             <Shadow>
-                <Curretn src="assets/help.jpg" alt="" />
+                <Curretn src="assets/baner.png" alt="" />
             </Shadow>
         </Row>
     );

@@ -1,26 +1,29 @@
 import React, { PureComponent } from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,ResponsiveContainer
 } from 'recharts';
 
 const data = [
   {
-    name: 'Monady', uv: 4000, pv: 2400, amt: 2400,
+    name: 'Pon', uv: 4000, pv: 2400, amt: 2400,
   },
   {
-    name: 'Tuesday', uv: 3000, pv: 1398, amt: 2210,
+    name: 'Wt', uv: 3000, pv: 1398, amt: 2210,
   },
   {
-    name: 'Wednesday', uv: 2000, pv: 9800, amt: 2290,
+    name: 'Śro', uv: 2000, pv: 9800, amt: 2290,
   },
   {
-    name: 'Thursday', uv: 2780, pv: 3908, amt: 2000,
+    name: 'Czw', uv: 2780, pv: 3908, amt: 2000,
   },
   {
-    name: 'Friday', uv: 1890, pv: 4800, amt: 2181,
+    name: 'Pt', uv: 1890, pv: 4800, amt: 2181,
   },
   {
-    name: 'Saturday', uv: 2390, pv: 3800,
+    name: 'Sob', uv: 2390, pv: 3800,
+  },
+  {
+    name: 'Nie', uv: 2550, pv: 3920,
   },
 ];
 
@@ -49,22 +52,25 @@ export default class SmileChart extends PureComponent {
 
   render() {
     return (
-      <LineChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        {/* <Legend /> */}
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" dot={<CustomizedDot />} />
-        {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
-      </LineChart>
+      <ResponsiveContainer width="100%"> 
+
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5, right: 30, left: 20, bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          {/* <YAxis /> */}
+          {/* <Tooltip /> */}
+          {/* <Legend /> */}
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" dot={<CustomizedDot />} />
+          {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
+        </LineChart>
+      </ResponsiveContainer>
     );
   }
 }

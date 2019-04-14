@@ -11,23 +11,23 @@ class LiveData extends React.Component {
             <Row className="live">
 
                 <Col xs={12} md={3}>
-                    <Dice>
+                    <Dice path="" add={0}  >
                         Puls
                     </Dice>
                 </Col>
                 <Col xs={12} md={3}>
-                    <Dice>
-                        Kroki dziś: 
+                    <Dice path="" add={1700} down={true}>
+                        Ilość kroków
                     </Dice>
                 </Col>
                 <Col xs={12} md={3}>
-                    <Dice>
-                        Re
+                    <Dice path="" add={80} >
+                        Humor
                     </Dice>
                 </Col>
                 <Col xs={12} md={3}>
-                    <Dice>
-                        xD
+                    <Dice path="" add={320}>
+                        GSR
                     </Dice>
                 </Col>
 
@@ -40,14 +40,52 @@ export default LiveData
 
 const Dice = ({
     path,
-    children
+    children,
+    add,
+    down
 }) => (
         <Border>
-            {children}
+            <h5>
+                {children}
+                <Counter sum={add} adup={down} />
+            </h5>
             {/* <Paczka src={path} className="img-fluid " ></Paczka> */}
         </Border>
     )
 
+
+class Counter extends React.Component {
+    state = {
+        num: 90 + this.props.sum
+    }
+
+    timout() {
+        setTimeout(function () {
+
+            let a = Math.floor(Math.random() * 5);
+            if (!(this.props.adup)) {
+                this.setState({ num: 90 + this.props.sum })
+            }
+            this.setState({ num: this.state.num + a })
+
+            this.timout();
+        }.bind(this), 1000);
+    }
+    componentDidMount() {
+        this.timout()
+    }
+
+
+    render() {
+
+        return (
+            <div style={{ marginTop: "20%" }}>
+                <h2>
+                    {this.state.num}
+                </h2>
+            </div>)
+    }
+}
 
 const Paczka = styled.img`
 min-width: 100%;

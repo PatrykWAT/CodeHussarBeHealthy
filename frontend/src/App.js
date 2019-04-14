@@ -12,6 +12,8 @@ import Status from './components/Status'
 
 import { Container, Row } from 'reactstrap'
 
+
+
 // #033a79 granat
 // #FF00c7 różowy
 
@@ -40,7 +42,8 @@ class App extends Component {
           </Container>
         </>
         }
-      </Background >
+
+      // </Background >
     );
   }
 }
