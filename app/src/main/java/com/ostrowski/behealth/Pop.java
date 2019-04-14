@@ -54,11 +54,11 @@ public class Pop extends Activity {
     int suma=0;
     public void nextQuestion(){
         if(counter==1){
-            TextViewAnimatedChange(this,question,"I like what I do "   );
+            TextViewAnimatedChange(this,question,"Lubię to co robię "   );
         }
 
         if(counter==2){
-            TextViewAnimatedChange(this,question,"I'm happy with myself "  );
+            TextViewAnimatedChange(this,question,"Jestem zadowolony z siebie "  );
         }
 
         if(counter==3) {

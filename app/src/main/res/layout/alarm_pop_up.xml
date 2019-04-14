@@ -31,7 +31,7 @@
             android:layout_height="46dp"
             android:layout_marginTop="40dp"
             android:gravity="center"
-            android:text="Is the following sentence true?"
+            android:text="Na ile poniższe zdania sa prawdziwe"
             android:textColor="#0e5a7b"
             android:textSize="12dp"
 
@@ -44,7 +44,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:text="I often neglect my duties"
+            android:text="Często zalegam z obowiązkami"
             android:textColor="#0e5a7b"
             android:textSize="13dp"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -70,7 +70,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/buttonstyle"
             android:onClick="no"
-            android:text="Definitely not"
+            android:text="Definitywnie nie"
             android:textColor="#cc0000"
             app:layout_constraintBottom_toTopOf="@+id/niewiem"
             app:layout_constraintHorizontal_bias="0.566"
@@ -85,7 +85,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/buttonstyle"
             android:onClick="nwm"
-            android:text="I don't know"
+            android:text="Nie wiem"
             android:textColor="#ff6600"
             tools:layout_editor_absoluteY="231dp" />
 
@@ -98,7 +98,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/buttonstyle"
             android:onClick="maybe"
-            android:text="Maybe"
+            android:text="Może"
             android:textColor="#b3b300"
             app:layout_constraintBottom_toTopOf="@+id/tak"
             app:layout_constraintTop_toBottomOf="@+id/niewiem"
@@ -112,7 +112,7 @@
             android:layout_marginBottom="84dp"
             android:background="@drawable/buttonstyle"
             android:onClick="yes"
-            android:text="Definitely yes"
+            android:text="Zdecydowanie tak"
             android:textColor="#00cc00"
             app:layout_constraintHorizontal_bias="0.513" />
     </LinearLayout>
