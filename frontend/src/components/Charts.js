@@ -8,7 +8,7 @@ class Charts extends React.Component {
 
     render() {
         return (
-            <Streach>
+            <Streach className="stats">
 
                 <BigChart />
             </Streach>

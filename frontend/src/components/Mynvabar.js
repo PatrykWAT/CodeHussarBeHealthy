@@ -66,37 +66,16 @@ class MyNavbar extends React.Component {
                                     Live Stats</MyLink>
                             </NavItem>
                             <NavItem>
-                                <MyLink className="nav-link" activeClass="active" to="summary" spy={true} smooth={true} duration={500} >
+                                <MyLink className="nav-link" activeClass="active" to="Current" spy={true} smooth={true} duration={500} >
                                     Summary</MyLink>
                             </NavItem>
-                            {/* <NavItem>
+                            <NavItem>
 
-                                <MyLink className="nav-link" activeClass="active" to="Stats" spy={true} smooth={true} duration={500} >
+                                <MyLink className="nav-link" activeClass="active" to="stats" spy={true} smooth={true} duration={500} >
                                     Stats</MyLink>
 
-                            </NavItem> */}
+                            </NavItem>
 
-
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle style={{ color: "#ff00c7", fontSize: "1.2em " }} nav caret>
-                                    Stats
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        <MyLink className="nav-link" activeClass="active" to="Stats" spy={true} smooth={true} duration={500} >
-                                            Firs Stats</MyLink>
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        <MyLink className="nav-link" activeClass="active" to="Stats" spy={true} smooth={true} duration={500} >
-                                            Second Stat</MyLink>
-                                    </DropdownItem>
-                                    {/* <DropdownItem divider /> */}
-                                    <DropdownItem>
-                                        <MyLink className="nav-link" activeClass="active" to="Stats" spy={true} smooth={true} duration={500} >
-                                            Third Stat</MyLink>
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>

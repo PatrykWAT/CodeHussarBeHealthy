@@ -9,7 +9,7 @@ class Status extends React.Component {
 
     render() {
         return (
-            <Row>
+            <Row className="Current">
                 <Col xs={12} md={6}>
                     <Xdont>
                         <Smilie />

@@ -45,7 +45,7 @@ const CustomizedDot = (props) => {
 };
 
 export default class SmileChart extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/9y9zrpjp/';
+  // static jsfiddleUrl = 'https://jsfiddle.net/alidingling/9y9zrpjp/';
 
   render() {
     return (
@@ -68,3 +68,4 @@ export default class SmileChart extends PureComponent {
     );
   }
 }
+
