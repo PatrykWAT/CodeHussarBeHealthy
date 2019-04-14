@@ -64,6 +64,11 @@ public class menu extends AppCompatActivity {
         Intent intent = new Intent( this, Pop.class );
         startActivity( intent );
     }
+
+    public void speed(View view) {
+        Intent intent = new Intent( this, SpeedTest.class );
+        startActivity( intent );
+    }
 }
 
 

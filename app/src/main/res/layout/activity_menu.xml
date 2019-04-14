@@ -112,6 +112,7 @@
         android:id="@+id/imageView14"
         android:layout_width="127dp"
         android:layout_height="140dp"
+        android:onClick="speed"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
