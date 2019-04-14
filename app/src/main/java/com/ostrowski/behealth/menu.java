@@ -30,7 +30,8 @@ public class menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_menu );
-
+        pulse=findViewById( R.id.pulse );
+        pulse.setText( "80" );
         manager();
 
     }
